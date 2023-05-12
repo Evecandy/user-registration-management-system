@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="index.js"></script>
+  </head>
+
+  <body>
+    <h1>Registration Management System</h1><br>
+    
+    <div id="navbar">
+      <button id="create" class="btn">CREATE</button>
+      <button id="read" class="btn">READ</button>
+      <button id="update" class="btn">UPDATE</button>
+      <button id="delete" class="btn">DELETE</button>
+      
+    </div><br>
+    <div id="form">
+      <form  id="my-form" action="/myformsubmitted"></form>>
+        <label for="user-name">User name:</label>
+        <input type="text" id="user-name" class="user-name" value=""><br><br>
+        <label for="id-number">ID number:</label>
+        <input type="number" id="id-number" class="id-number" value=""><br><br>
+        <label for="country">Your country:</label>
+        <select name="country" id="country">
+            <option value="Zambia">Zambia</option>
+            <option value="Kenya">Kenya</option>
+            <option value="Egypt">Egypt</option>
+            <option value="Libya">Libya</option>
+          </select>
+          <br><br>
+        <!-- <input type="text" id="country" class="country" value=""><br> -->
+        <label for="languages">Languages spoken:</label>
+        <input type="text" id="languages" class="languages" value=""><br><br>
+        
+        <input type="text" placeholder="my form input" id="my-form-input">
+          <input type="submit" value="SUBMIT">
+      </form>
+    </div>
+    
+  </body>
+</html>
