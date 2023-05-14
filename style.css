@@ -1,42 +1,92 @@
 body {
-    width: 80%;
-    margin: auto;
-}
-h1{
-    
-    padding-top: 5rem;
-
-}
-#navbar{
-    top: 0px;
-    left: 0px;
     width: 100%;
-    height: 80px;
-    position: fixed;
+    min-height: 100svh;
+    background-color: #F6F8FA;
+    margin: 0;
+}
 
+header {
+    /* background-color: #262627; */
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
 }
-#navbar{
-    float: right;
-    padding-top: 15px;
+
+#logo {
+    font-size: xxx-large;
+    text-align: center;
+    font-weight: 900;
+    color: aqua;
+    border: 2px solid black;
+    border-top: none;
+    border-left: none;
 }
-.btn {
-    background-color: rgb(43, 162, 226);
-    border: none;
-    height: 4rem;
-    width: 20svw;
+
+header nav {
+    display: flex;
+    font-size: large;
+    font-weight: 700;
+    background-color: rgb(204, 201, 201);
+   /* gap: 2rem; */
+}
+
+header nav>div {
     cursor: pointer;
-    border-radius: 3rem;
-}
-.btn:hover {
-    background-color: lightcoral;
-} 
-#form {
-    margin: 2rem;
-    background-color: darkkhaki;
-    padding: 4rem;
+    /* background-color: rgb(101, 102, 104); */
+    padding: 1rem;
+    
+
 }
 
-#submit {
-color: black;
+header nav>div:hover {
+    background-color: gray;
+}
 
+.selected-nav {
+    background-color: gray;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+#add-user-form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    border: 1px solid coral;
+    padding: 0.5rem;
+    gap: 0.5rem;
+}
+
+#add-user-form h1 {
+    text-align: center;
+}
+
+#add-user-form input[type=submit] {
+    background-color: #262627;
+    color: aliceblue;
+    cursor: pointer;
+    width: 50%;
+    align-self: center;
+}
+
+#add-user-form input[type=submit]:hover {
+    background-color: grey;
+}
+
+.user-card {
+    border: 1px solid grey;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.user-card-btns {
+    align-self:flex-end
 }
